@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:hao_ke_zu_fang/pages/home/tab_index/index.dart';
 import 'package:hao_ke_zu_fang/pages/home/tab_mine/index.dart';
 import 'package:hao_ke_zu_fang/pages/home/tab_news/index.dart';
-import 'package:hao_ke_zu_fang/pages/home/tab_room/index.dart';
+import 'package:hao_ke_zu_fang/pages/home/tab_search/index.dart';
 
 const List<BottomNavigationBarItem> _barItems = [
   BottomNavigationBarItem(icon: Icon(Icons.home_outlined), label: '首页'),
@@ -14,7 +14,7 @@ const List<BottomNavigationBarItem> _barItems = [
 
 const List<Widget> _listView = [
   TabIndex(),
-  TabRoom(),
+  TabSearch(),
   TabNews(),
   TabMine(),
 ];

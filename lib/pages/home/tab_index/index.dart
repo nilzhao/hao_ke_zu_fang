@@ -1,12 +1,15 @@
 import 'package:flutter/material.dart';
+import 'package:hao_ke_zu_fang/pages/home/tab_index/banner.dart';
 
-class TabRoom extends StatelessWidget {
-  const TabRoom({Key key}) : super(key: key);
+class TabIndex extends StatelessWidget {
+  const TabIndex({Key key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      child: Text('找房'),
+    return ListView(
+      children: [
+        TabIndexBanner(),
+      ],
     );
   }
 }
