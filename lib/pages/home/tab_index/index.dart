@@ -10,7 +10,9 @@ class TabIndex extends StatelessWidget {
     return ListView(
       children: [
         TabIndexBanner(),
+        Padding(padding: EdgeInsets.all(10)),
         TabIndexNav(),
+        Padding(padding: EdgeInsets.all(10)),
       ],
     );
   }
