@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:hao_ke_zu_fang/pages/home/tab_index/banner.dart';
+import 'package:hao_ke_zu_fang/pages/home/tab_index/nav.dart';
 
 class TabIndex extends StatelessWidget {
   const TabIndex({Key key}) : super(key: key);
@@ -9,6 +10,7 @@ class TabIndex extends StatelessWidget {
     return ListView(
       children: [
         TabIndexBanner(),
+        TabIndexNav(),
       ],
     );
   }

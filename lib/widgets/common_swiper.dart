@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_swiper_null_safety/flutter_swiper_null_safety.dart';
+import 'package:hao_ke_zu_fang/widgets/common_image.dart';
 
 class CommonSwiper extends StatelessWidget {
   final List<String> images;
@@ -15,8 +16,8 @@ class CommonSwiper extends StatelessWidget {
         height: MediaQuery.of(context).size.width / imageWidth * imageHeight,
         child: new Swiper(
           itemBuilder: (BuildContext context, int index) {
-            return new Image.network(
-              images[index],
+            return CommonImage(
+              url: images[index],
               fit: BoxFit.fill,
             );
           },
