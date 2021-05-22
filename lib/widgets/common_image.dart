@@ -10,8 +10,8 @@ class CommonImage extends StatelessWidget {
   final double height;
   final BoxFit fit;
 
-  const CommonImage(
-      {Key key, this.url, this.width, this.height, this.fit = BoxFit.cover})
+  const CommonImage(this.url,
+      {Key key, this.width, this.height, this.fit = BoxFit.cover})
       : super(key: key);
 
   @override

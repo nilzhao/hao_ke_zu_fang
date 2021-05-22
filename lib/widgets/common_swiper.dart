@@ -17,7 +17,7 @@ class CommonSwiper extends StatelessWidget {
         child: new Swiper(
           itemBuilder: (BuildContext context, int index) {
             return CommonImage(
-              url: images[index],
+              images[index],
               fit: BoxFit.fill,
             );
           },
