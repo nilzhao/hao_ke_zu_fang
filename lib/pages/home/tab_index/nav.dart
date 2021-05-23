@@ -18,7 +18,7 @@ class TabIndexNav extends StatelessWidget {
                       CommonImage(navItem.imageUrl, width: 45),
                       Text(navItem.label,
                           style: TextStyle(
-                            fontWeight: FontWeight.w500,
+                            fontWeight: FontWeight.w600,
                           )),
                     ],
                   ),

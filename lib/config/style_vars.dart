@@ -24,5 +24,5 @@ class QColor {
 }
 
 class QBorderRadius {
-  static const primary = 2.0;
+  static const primary = 4.0;
 }

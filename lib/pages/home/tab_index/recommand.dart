@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:hao_ke_zu_fang/config/space.dart';
+import 'package:hao_ke_zu_fang/config/style_vars.dart';
 import 'package:hao_ke_zu_fang/pages/home/tab_index/data.dart';
 
 import 'recommand_item.dart';
@@ -13,7 +13,7 @@ class TabIndexRecommand extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: EdgeInsets.all(space_sm),
+      padding: EdgeInsets.all(QSpace.space_sm),
       decoration: BoxDecoration(color: Colors.grey[200]),
       child: Column(
         children: [
@@ -35,12 +35,12 @@ class TabIndexRecommand extends StatelessWidget {
             ],
           ),
           Wrap(
-            spacing: space_sm, // gap between adjacent chips
-            runSpacing: space_sm, // gap between lines
+            spacing: QSpace.space_sm, // gap between adjacent chips
+            runSpacing: QSpace.space_sm, // gap between lines
             children: data
                 .map((recommand) => IndexRecommendItemWiget(
                       recommand: recommand,
-                      spacing: space_sm,
+                      spacing: QSpace.space_sm,
                     ))
                 .toList(),
           ),

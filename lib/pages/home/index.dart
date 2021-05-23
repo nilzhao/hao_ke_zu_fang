@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:hao_ke_zu_fang/pages/home/tab_index/index.dart';
 import 'package:hao_ke_zu_fang/pages/home/tab_mine/index.dart';
-import 'package:hao_ke_zu_fang/pages/home/tab_news/index.dart';
+import 'package:hao_ke_zu_fang/pages/home/tab_info/index.dart';
 import 'package:hao_ke_zu_fang/pages/home/tab_search/index.dart';
 
 const List<BottomNavigationBarItem> _barItems = [
@@ -15,7 +15,7 @@ const List<BottomNavigationBarItem> _barItems = [
 const List<Widget> _listView = [
   TabIndex(),
   TabSearch(),
-  TabNews(),
+  TabInfo(),
   TabMine(),
 ];
 
@@ -38,7 +38,7 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('首页'),
+        title: Text('好客租房网'),
       ),
       body: _listView[currentIndex],
       bottomNavigationBar: BottomNavigationBar(
