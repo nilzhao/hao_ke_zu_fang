@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:hao_ke_zu_fang/pages/home/info/data.dart';
 import 'package:hao_ke_zu_fang/pages/home/info/index.dart';
 import 'package:hao_ke_zu_fang/pages/home/tab_index/banner.dart';
 import 'package:hao_ke_zu_fang/pages/home/tab_index/nav.dart';
@@ -19,6 +20,7 @@ class TabIndex extends StatelessWidget {
         TabIndexRecommand(),
         Info(
           titleVisible: true,
+          data: infoData.getRange(0, 3).toList(),
         ),
       ],
     );

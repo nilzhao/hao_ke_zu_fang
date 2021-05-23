@@ -27,23 +27,20 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
-  int currentIndex = 0;
+  int _currentIndex = 0;
   _onTap(int index) {
     this.setState(() {
-      currentIndex = index;
+      _currentIndex = index;
     });
   }
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text('好客租房网'),
-      ),
-      body: _listView[currentIndex],
+      body: _listView[_currentIndex],
       bottomNavigationBar: BottomNavigationBar(
         type: BottomNavigationBarType.fixed,
-        currentIndex: currentIndex,
+        currentIndex: _currentIndex,
         items: _barItems,
         onTap: _onTap,
       ),
