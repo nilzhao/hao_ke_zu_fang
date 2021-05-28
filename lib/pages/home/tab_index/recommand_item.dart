@@ -23,7 +23,7 @@ class IndexRecommendItemWiget extends StatelessWidget {
           borderRadius:
               BorderRadius.all(Radius.circular(QBorderRadius.primary)),
         ),
-        padding: EdgeInsets.all(QSpace.space_sm),
+        padding: EdgeInsets.all(QSpace.sm),
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceAround,
           children: [

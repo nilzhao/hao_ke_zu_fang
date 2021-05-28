@@ -15,7 +15,7 @@ class InfoItemWiget extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       height: 100.0,
-      padding: EdgeInsets.all(QSpace.space_sm),
+      padding: EdgeInsets.all(QSpace.sm),
       child: GestureDetector(
         onTap: () {
           Navigator.of(context).pushNamed(info.navigateUrl);
@@ -23,7 +23,7 @@ class InfoItemWiget extends StatelessWidget {
         child: Row(
           children: [
             CommonImage(info.imageUrl, width: 120.0, height: 90.0),
-            Padding(padding: EdgeInsets.only(left: QSpace.space_sm)),
+            Padding(padding: EdgeInsets.only(left: QSpace.sm)),
             Expanded(
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,

@@ -13,7 +13,7 @@ class TabIndexRecommand extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: EdgeInsets.all(QSpace.space_sm),
+      padding: EdgeInsets.all(QSpace.sm),
       decoration: BoxDecoration(color: Colors.grey[200]),
       child: Column(
         children: [
@@ -35,12 +35,12 @@ class TabIndexRecommand extends StatelessWidget {
             ],
           ),
           Wrap(
-            spacing: QSpace.space_sm, // gap between adjacent chips
-            runSpacing: QSpace.space_sm, // gap between lines
+            spacing: QSpace.sm, // gap between adjacent chips
+            runSpacing: QSpace.sm, // gap between lines
             children: data
                 .map((recommand) => IndexRecommendItemWiget(
                       recommand: recommand,
-                      spacing: QSpace.space_sm,
+                      spacing: QSpace.sm,
                     ))
                 .toList(),
           ),

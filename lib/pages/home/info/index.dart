@@ -18,7 +18,7 @@ class Info extends StatelessWidget {
           if (titleVisible)
             Container(
               alignment: Alignment.centerLeft,
-              padding: EdgeInsets.all(QSpace.space_sm),
+              padding: EdgeInsets.all(QSpace.sm),
               child: Text(
                 '最新资讯',
                 style: TextStyle(
