@@ -49,6 +49,8 @@ flutter:
 
   # To add assets to your application, add an assets section, like this:
   assets:
+    - static/icons/widget_search_bar_map.png
+
     - static/images/home_index_navigator_total.png
     - static/images/home_index_navigator_map.png
     - static/images/home_index_navigator_share.png
@@ -57,7 +59,6 @@ flutter:
     - static/images/home_index_recommend_2.png
     - static/images/home_index_recommend_3.png
     - static/images/home_index_recommend_4.png
-    - static/icons/widget_search_bar_map.png
     - static/images/home_profile_record.png
     - static/images/home_profile_order.png
     - static/images/home_profile_favor.png
