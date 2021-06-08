@@ -102,7 +102,11 @@ class _SearchBarState extends State<SearchBar> {
                   if (widget.onSearchSubmit == null) {
                     _searchFocus.unfocus();
                   }
-                  widget.onSearchTap(context);
+                  if (widget.onSearchTap != null) {
+                    widget.onSearchTap(context);
+                  } else {
+                    _searchFocus.requestFocus();
+                  }
                 },
                 onChanged: (String val) {
                   setState(() {
