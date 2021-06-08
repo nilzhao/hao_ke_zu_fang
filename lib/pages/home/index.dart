@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:hao_ke_zu_fang/pages/home/tab_index/index.dart';
-import 'package:hao_ke_zu_fang/pages/home/tab_mine/index.dart';
+import 'package:hao_ke_zu_fang/pages/home/tab_profile/index.dart';
 import 'package:hao_ke_zu_fang/pages/home/tab_info/index.dart';
 import 'package:hao_ke_zu_fang/pages/home/tab_search/index.dart';
 
@@ -16,7 +16,7 @@ const List<Widget> _listView = [
   TabIndex(),
   TabSearch(),
   TabInfo(),
-  TabMine(),
+  TabProfile(),
 ];
 
 class HomePage extends StatefulWidget {
