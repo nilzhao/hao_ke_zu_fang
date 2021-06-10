@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import 'function_button.dart';
 import 'header.dart';
 
 class TabProfile extends StatelessWidget {
@@ -25,6 +26,7 @@ class TabProfile extends StatelessWidget {
       body: ListView(
         children: [
           Header(),
+          FunctionButton(),
         ],
       ),
     );
