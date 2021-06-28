@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 class FunctionButtonItem {
   final String imageUrl;
   final String title;
-  final Function onTapHandle;
+  final Function? onTapHandle;
   FunctionButtonItem(this.imageUrl, this.title, this.onTapHandle);
 }
 

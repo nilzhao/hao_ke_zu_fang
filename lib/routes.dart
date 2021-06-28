@@ -15,28 +15,28 @@ class Routes {
   static void configureRoutes(FluroRouter router) {
     // 首页
     router.define(home, handler: Handler(
-        handlerFunc: (BuildContext context, Map<String, List<String>> params) {
+        handlerFunc: (BuildContext? context, Map<String, List<String>> params) {
       return HomePage();
     }));
     // 登录
     router.define(login, handler: Handler(
-        handlerFunc: (BuildContext context, Map<String, List<String>> params) {
+        handlerFunc: (BuildContext? context, Map<String, List<String>> params) {
       return LoginPage();
     }));
     // 注册
     router.define(register, handler: Handler(
-        handlerFunc: (BuildContext context, Map<String, List<String>> params) {
+        handlerFunc: (BuildContext? context, Map<String, List<String>> params) {
       return RegisterPage();
     }));
     // 搜索
     router.define(search, handler: Handler(
-        handlerFunc: (BuildContext context, Map<String, List<String>> params) {
+        handlerFunc: (BuildContext? context, Map<String, List<String>> params) {
       return SearchPage();
     }));
 
     // 404
     router.notFoundHandler = Handler(
-        handlerFunc: (BuildContext context, Map<String, List<String>> params) {
+        handlerFunc: (BuildContext? context, Map<String, List<String>> params) {
       print('route was not found!');
       return NotFoundPage();
     });

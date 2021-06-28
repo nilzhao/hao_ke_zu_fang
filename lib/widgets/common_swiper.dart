@@ -7,7 +7,11 @@ class CommonSwiper extends StatelessWidget {
   final double imageWidth;
   final double imageHeight;
 
-  CommonSwiper({Key key, this.images, this.imageWidth, this.imageHeight})
+  CommonSwiper(
+      {Key? key,
+      required this.images,
+      required this.imageWidth,
+      required this.imageHeight})
       : super(key: key);
 
   @override

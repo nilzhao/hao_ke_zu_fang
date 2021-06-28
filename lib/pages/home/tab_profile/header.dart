@@ -7,7 +7,7 @@ const loginStyle = TextStyle(fontSize: QFont.size_xl, color: Colors.white);
 class _Avatar extends StatelessWidget {
   final String url;
 
-  const _Avatar(this.url, {Key key}) : super(key: key);
+  const _Avatar(this.url, {Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -26,7 +26,7 @@ class _Avatar extends StatelessWidget {
 
 class Header extends StatelessWidget {
   final bool _isLogin = true;
-  const Header({Key key}) : super(key: key);
+  const Header({Key? key}) : super(key: key);
 
   Widget _noLoginPageHeader(BuildContext context) {
     return Container(

@@ -6,15 +6,13 @@ import 'function_button_data.dart';
 
 class FunctionButtonWidget extends StatelessWidget {
   final FunctionButtonItem data;
-  const FunctionButtonWidget(this.data, {Key key}) : super(key: key);
+  const FunctionButtonWidget(this.data, {Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
         onTap: () {
-          if (data.onTapHandle != null) {
-            data.onTapHandle(context);
-          }
+          data.onTapHandle!(context);
         },
         child: Container(
           margin: EdgeInsets.only(top: QSpace.md),

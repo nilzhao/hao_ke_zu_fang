@@ -6,13 +6,14 @@ class RoomListItemData {
   final String imageUrl;
   final List<String> tags;
   final int price;
+
   const RoomListItemData({
-    this.id,
-    this.title,
-    this.subTitle,
-    this.imageUrl,
-    this.tags,
-    this.price,
+    required this.id,
+    required this.title,
+    required this.subTitle,
+    required this.imageUrl,
+    required this.tags,
+    required this.price,
   });
 }
 

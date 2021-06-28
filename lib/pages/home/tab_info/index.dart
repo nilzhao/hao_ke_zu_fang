@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:hao_ke_zu_fang/pages/home/info/index.dart';
 
 class TabInfo extends StatefulWidget {
-  const TabInfo({Key key}) : super(key: key);
+  const TabInfo({Key? key}) : super(key: key);
 
   @override
   _TabInfoState createState() => _TabInfoState();

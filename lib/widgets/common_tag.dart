@@ -5,12 +5,12 @@ const int _bgColorNum = 50;
 
 class CommonTagWiget extends StatelessWidget {
   final String text;
-  final Color color;
-  final Color backgroundColor;
+  final Color? color;
+  final Color? backgroundColor;
 
   const CommonTagWiget.origin(
     this.text, {
-    Key key,
+    Key? key,
     this.color,
     this.backgroundColor,
   }) : super(key: key);

@@ -7,7 +7,7 @@ import 'recommand_item.dart';
 class TabIndexRecommand extends StatelessWidget {
   final List<IndexRecommendItem> data;
 
-  const TabIndexRecommand({Key key, this.data = indexRecommendList})
+  const TabIndexRecommand({Key? key, this.data = indexRecommendList})
       : super(key: key);
 
   @override

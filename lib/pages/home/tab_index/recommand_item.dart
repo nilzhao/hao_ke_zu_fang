@@ -7,7 +7,8 @@ import 'data.dart';
 class IndexRecommendItemWiget extends StatelessWidget {
   final double spacing;
   final IndexRecommendItem recommand;
-  const IndexRecommendItemWiget({Key key, this.spacing, this.recommand})
+  const IndexRecommendItemWiget(
+      {Key? key, required this.spacing, required this.recommand})
       : super(key: key);
 
   @override

@@ -9,7 +9,7 @@ import 'package:hao_ke_zu_fang/widgets/search_bar.dart';
 import 'recommand.dart';
 
 class TabIndex extends StatelessWidget {
-  const TabIndex({Key key}) : super(key: key);
+  const TabIndex({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

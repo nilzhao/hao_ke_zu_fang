@@ -6,12 +6,12 @@ final _localReg = RegExp('^static');
 
 class CommonImage extends StatelessWidget {
   final String url;
-  final double width;
-  final double height;
-  final BoxFit fit;
+  final double? width;
+  final double? height;
+  final BoxFit? fit;
 
   const CommonImage(this.url,
-      {Key key, this.width, this.height, this.fit = BoxFit.cover})
+      {Key? key, this.width, this.height, this.fit = BoxFit.cover})
       : super(key: key);
 
   @override

@@ -15,7 +15,7 @@ class RoomItemWiget extends StatelessWidget {
 
   const RoomItemWiget(
     this.roomInfo, {
-    Key key,
+    Key? key,
   }) : super(key: key);
 
   @override

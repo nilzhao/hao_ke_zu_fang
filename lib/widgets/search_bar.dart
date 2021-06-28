@@ -4,15 +4,15 @@ import 'package:hao_ke_zu_fang/widgets/common_image.dart';
 
 class SearchBar extends StatefulWidget {
   final bool showLocation;
-  final Function onGoBack;
+  final Function? onGoBack;
   final String defaultInputValue;
   final bool showMap;
-  final Function onSearchTap;
-  final Function onSearchSubmit;
-  final Function onCancel;
+  final Function? onSearchTap;
+  final void Function(String)? onSearchSubmit;
+  final Function? onCancel;
 
   const SearchBar({
-    Key key,
+    Key? key,
     this.showLocation = false,
     this.onGoBack,
     this.defaultInputValue = '',
@@ -28,8 +28,8 @@ class SearchBar extends StatefulWidget {
 
 class _SearchBarState extends State<SearchBar> {
   String _keyWord = '';
-  TextEditingController _searchController;
-  FocusNode _searchFocus;
+  late TextEditingController _searchController;
+  late FocusNode _searchFocus;
 
   _handleClear() {
     _searchController.clear();
@@ -81,7 +81,7 @@ class _SearchBarState extends State<SearchBar> {
               ),
               child: GestureDetector(
                 onTap: () {
-                  widget.onGoBack(context);
+                  widget.onGoBack!(context);
                 },
                 child: Icon(
                   Icons.chevron_left,
@@ -103,7 +103,7 @@ class _SearchBarState extends State<SearchBar> {
                     _searchFocus.unfocus();
                   }
                   if (widget.onSearchTap != null) {
-                    widget.onSearchTap(context);
+                    widget.onSearchTap!(context);
                   } else {
                     _searchFocus.requestFocus();
                   }

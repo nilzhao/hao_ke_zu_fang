@@ -5,7 +5,7 @@ import 'package:hao_ke_zu_fang/widgets/search_bar.dart';
 import '../../../routes.dart';
 
 class TabSearch extends StatelessWidget {
-  const TabSearch({Key key}) : super(key: key);
+  const TabSearch({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

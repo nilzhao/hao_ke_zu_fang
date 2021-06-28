@@ -6,7 +6,7 @@ import 'data.dart';
 class RoomList extends StatelessWidget {
   final List<RoomListItemData> roomList;
 
-  const RoomList({Key key, this.roomList = defaultRoomList}) : super(key: key);
+  const RoomList({Key? key, this.roomList = defaultRoomList}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

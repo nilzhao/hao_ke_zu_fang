@@ -8,7 +8,7 @@ class InfoItemWiget extends StatelessWidget {
   final InfoItem info;
   const InfoItemWiget(
     this.info, {
-    Key key,
+    Key? key,
   }) : super(key: key);
 
   @override
@@ -18,11 +18,11 @@ class InfoItemWiget extends StatelessWidget {
       padding: EdgeInsets.all(QSpace.sm),
       child: GestureDetector(
         onTap: () {
-          Navigator.of(context).pushNamed(info.navigateUrl);
+          Navigator.of(context).pushNamed(info.navigateUrl!);
         },
         child: Row(
           children: [
-            CommonImage(info.imageUrl, width: 120.0, height: 90.0),
+            CommonImage(info.imageUrl!, width: 120.0, height: 90.0),
             Padding(padding: EdgeInsets.only(left: QSpace.sm)),
             Expanded(
               child: Column(
@@ -30,16 +30,16 @@ class InfoItemWiget extends StatelessWidget {
                 children: [
                   Container(
                       alignment: Alignment.centerLeft,
-                      child: Text(info.title,
+                      child: Text(info.title!,
                           style: TextStyle(
                             fontWeight: FontWeight.w600,
                           ))),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
-                      Text(info.source,
+                      Text(info.source!,
                           style: TextStyle(fontSize: QFont.size_sm)),
-                      Text(info.time,
+                      Text(info.time!,
                           style: TextStyle(fontSize: QFont.size_sm)),
                     ],
                   ),

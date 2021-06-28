@@ -7,7 +7,7 @@ import 'item.dart';
 class Info extends StatelessWidget {
   final bool titleVisible;
   final List<InfoItem> data;
-  const Info({Key key, this.titleVisible = false, this.data = infoData})
+  const Info({Key? key, this.titleVisible = false, this.data = infoData})
       : super(key: key);
 
   @override
