@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:hao_ke_zu_fang/pages/home/info/index.dart';
 
 import 'advertisement.dart';
 import 'function_button.dart';
@@ -29,6 +30,7 @@ class TabProfile extends StatelessWidget {
           Header(),
           FunctionButton(),
           Advertisement(),
+          Info(titleVisible: true),
         ],
       ),
     );
