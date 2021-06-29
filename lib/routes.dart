@@ -5,11 +5,13 @@ import 'package:hao_ke_zu_fang/pages/login.dart';
 import 'package:hao_ke_zu_fang/pages/not_found.dart';
 import 'package:hao_ke_zu_fang/pages/register.dart';
 import 'package:hao_ke_zu_fang/pages/search/index.dart';
+import 'package:hao_ke_zu_fang/pages/setting.dart';
 
 class Routes {
   static final String home = '/';
   static final String login = '/login';
   static final String register = '/register';
+  static final String setting = '/setting';
   static final String search = '/search';
 
   static void configureRoutes(FluroRouter router) {
@@ -27,6 +29,11 @@ class Routes {
     router.define(register, handler: Handler(
         handlerFunc: (BuildContext? context, Map<String, List<String>> params) {
       return RegisterPage();
+    }));
+    // 设置
+    router.define(setting, handler: Handler(
+        handlerFunc: (BuildContext? context, Map<String, List<String>> params) {
+      return SettingPage();
     }));
     // 搜索
     router.define(search, handler: Handler(

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:hao_ke_zu_fang/pages/home/info/index.dart';
+import 'package:hao_ke_zu_fang/routes.dart';
 
 import 'advertisement.dart';
 import 'function_button.dart';
@@ -20,7 +21,7 @@ class TabProfile extends StatelessWidget {
               Icons.settings,
             ),
             onPressed: () {
-              Navigator.of(context).pushNamed('settings');
+              Navigator.of(context).pushNamed(Routes.setting);
             },
           ),
         ],
