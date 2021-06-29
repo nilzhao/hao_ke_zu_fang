@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:hao_ke_zu_fang/routes.dart';
 
 class FunctionButtonItem {
   final String imageUrl;
@@ -18,7 +19,7 @@ final List<FunctionButtonItem> list = [
   FunctionButtonItem('static/images/home_profile_house.png', "房屋管理", (context) {
     bool isLogin = true; //假设先设置未登录
     if (isLogin) {
-      Navigator.pushNamed(context, 'roomManager');
+      Navigator.pushNamed(context, Routes.roomManager);
     }
   })
 ];
